@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+body,
+html {
+    min-height: 100%;
+}
+
+i {
+    color: #F8EDFF;
+    margin: 0 1rem;
+}
+
+.container {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #F8EDFF;
+}
+
+/* header */
+header {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    padding: 2em;
+    background-color: #BFCFE7;
+    color: #3D3B40;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.h-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-buttons button {
+    border: none;
+    background-color: #525CEB;
+    width: 90px;
+    height: 40px;
+    color: #EEE;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #3D3B40;
+    color: #F8EDFF;
+    transition: 0.3s ease;
+}
+
+#img_right {
+    background-color: #EEE;
+    border-radius: 50%;
+}
+
+#myNAme {
+    margin: 0 1em;
+    font-weight: 500;
+}
+
+.fa-bell,
+.fa-search {
+    font-size: 1.5em;
+    color: #3D3B40;
+}
+
+#input {
+    width: 50em;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F8EDFF;
+    padding: 0 2em;
+}
+
+
+/* navbar */
+nav {
+    grid-row: 1 / 5;
+    padding: 2em;
+    background-color: #525CEB;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #FEF3E2;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #3D3B40;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-links {
+    margin: 5em 1em;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.nav_logo span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: #FEF3E2;
+}
+
+.other-navlink {
+    margin-top: 5em;
+}
+
+/* CONTENT */
+main {
+    grid-column: 2/4;
+    grid-row: 2/5;
+    padding: 0 2em;
+    min-width: 400px;
+}
+
+.main-content>h2:first-child,
+aside h1 {
+    font-weight: 600;
+    color: #3D3B40;
+
+}
+
+/* card */
+.card {
+    background-color: #F8EDFF;
+    color: #3D3B40;
+    padding: 1rem;
+    border-left: 8px solid #525CEB;
+    border-radius: 8px;
+    box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.39);
+    height: 235px;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 2rem;
+    max-height: 800px;
+    overflow: auto;
+    padding: 1em;
+    scrollbar-color: #525CEB #F8EDFF;
+    scrollbar-width: thin;
+}
+
+.card i {
+    color: #3D3B40;
+
+}
+
+.card-footer {
+    text-align: right;
+    margin-top: 4em;
+}
+
+.main-content h2 {
+    margin: 1rem 0;
+}
+
+.aside-content h1 {
+    margin: 1em 0;
+}
+
+/* ASIDE */
+aside {
+    grid-column: 4/5;
+    grid-row: 2/5;
+    padding: 0 2em;
+    color: #3D3B40;
+}
+
+.aside_border-btm {
+    border-bottom: 1px solid #3d3b4036;
+    padding: 0.5em;
+    margin: auto;
+    width: 95%;
+
+}
+
+.aside_top-content {
+    background-color: #F8EDFF;
+    padding: 1em;
+    box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.39);
+    border-radius: 8px;
+
+}
+
+.aside_top-content h3 {
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+/* TRENDING CONTENT */
+.trending {
+    margin-top: 2em;
+}
+
+.trending h1 {
+    margin: 1em 0;
+}
+
+.trending-content {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.trending-img {
+    width: 70px;
+    border-radius: 50%;
+    background-color: #525CEB;
+    margin: 0 1em;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        max-height: 1080px;
+    }
+
+    .card-footer {
+        margin: 1.5em;
+    }
+
+    nav a {
+        font-size: 1.3em;
+    }
+
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 1280px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-footer {
+        margin: 2em;
+    }
+
+    nav a {
+        font-size: 1.6em;
+    }
+
+
+}
